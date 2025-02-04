@@ -1,0 +1,14 @@
+<div class="chatContainer">
+    <div class="chatContainerTop">
+        <h2 class="chatContainerTopHeading">My Tax Buddy</h2>
+    </div>
+
+    <div class="chatContainerMiddle">
+     <app-message-list></app-message-list>
+    </div>
+
+    <div class="chatContainerBottom">
+        <app-message-input (sendMessage)="handleNewMessage($event)"></app-message-input>
+    </div>
+
+</div>

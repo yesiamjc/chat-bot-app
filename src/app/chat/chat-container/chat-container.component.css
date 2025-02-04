@@ -1,0 +1,14 @@
+.chatContainerTop{
+    height: 100px;
+    width:100vw;
+    background-color: purple;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chatContainerMiddle{
+    min-height: 70vh;
+}

@@ -1,0 +1,15 @@
+<div class="messageInput">
+    <input 
+    type="text"
+    [(ngModel)]="userInput"
+    placeholder="Enter Your Query"
+    class="messageInputFeild"
+    (keyup.enter)="onSendMessage()"
+    >
+    <img 
+    src="send.svg" 
+    alt="none" 
+    class="messageInputButton" 
+    (click)="onSendMessage()"
+    >
+</div>
