@@ -1,0 +1,12 @@
+<!-- message.component.html -->
+<div class="message" [ngClass]="{'user-message': !isBot, 'bot-message': isBot}">
+    <div class="message-avatar" *ngIf="isBot">
+        <img src="assets/bot-avatar.png" alt="Bot">
+    </div>
+    <div class="message-content">
+        {{ message.text }}
+        <div class="message-time">
+            {{ message.timestamp | date:'shortTime' }}
+        </div>
+    </div>
+</div>
