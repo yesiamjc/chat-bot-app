@@ -14,3 +14,4 @@ export class MessageListComponent {
     this.messages = this.chatService.getMessages();
   }
 }
+
