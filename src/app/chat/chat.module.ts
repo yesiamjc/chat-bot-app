@@ -5,6 +5,7 @@ import { ChatContainerComponent } from './chat-container/chat-container.componen
 import { MessageListComponent } from './message-list/message-list.component';
 import { MessageComponent } from './message/message.component';
 import { MessageInputComponent } from './message-input/message-input.component';
+import { ChatService } from './services/chat.service';
 
 @NgModule({
   declarations: [
@@ -14,11 +15,12 @@ import { MessageInputComponent } from './message-input/message-input.component';
     MessageInputComponent
   ],
   imports: [
-    CommonModule, 
-    FormsModule 
+    CommonModule,
+    FormsModule
   ],
   exports: [
-    ChatContainerComponent  
-  ]
+    ChatContainerComponent
+  ],
+  providers: [ChatService]
 })
 export class ChatModule { }
